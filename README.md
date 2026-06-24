@@ -8,6 +8,14 @@ This project provides build scripts to run Claude Desktop natively on Linux syst
 
 ---
 
+> **🔱 Fork de [`aaddrick/claude-desktop-debian`](https://github.com/aaddrick/claude-desktop-debian) mantido por [samirhvbr](https://github.com/samirhvbr).**
+>
+> **Convenção de commits deste fork:** `versão - comentário` — ex.: `0.1.0 - ajusta build`. A versão vem de [`version.md`](version.md) e é **incrementada a cada feature/mudança relevante** (Z+1). Mensagens em **pt-BR**.
+>
+> Notas de continuidade em [`.continue/estado-atual.md`](.continue/estado-atual.md); perfis de modelo Claude Code em [`.claude/README.md`](.claude/README.md). Sincronizar com o original: `git fetch upstream && git merge upstream/main`.
+
+---
+
 > **⚠️ APT migration notice (April 2026)**
 >
 > The APT/DNF repo moved to `pkg.claude-desktop-debian.dev` (#493) — binaries are now served from GitHub Releases via a Cloudflare Worker so they don't hit the 100 MB per-file push cap on `gh-pages`. **DNF users are unaffected.** APT users on the legacy `aaddrick.github.io` sources.list will see a scheme-downgrade error on `apt update`. [One-line `sed` fix](#migrating-from-the-old-aaddrickgithubio-url).
